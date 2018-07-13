@@ -8,7 +8,7 @@ using Vidly.ViewModels;
 
 namespace Vidly.Controllers
 {
-    public class CustomersController : Controller
+    public partial class CustomersController : Controller
     {
         public List<Customer> CustomersList = new List<Customer>
         {
@@ -18,21 +18,21 @@ namespace Vidly.Controllers
 
 
         // GET: Customers
-        public ActionResult Index()
+        public virtual ActionResult Index()
         {
             var customList = CustomersList;
-          
-            var customersViewModel = new CustomersViewModel {AllCustomers = customList};
+
+            var customersViewModel = new CustomersViewModel { AllCustomers = customList };
 
             return View(customersViewModel);
         }
 
         [Route("/{id}")]
-        public ActionResult Details(int id)
+        public virtual ActionResult Details(int id)
         {
 
-           Customer customer = CustomersList.FirstOrDefault(c => c.Id == id);
-           
+            Customer customer = CustomersList.FirstOrDefault(c => c.Id == id);
+
             if (customer == null)
                 return HttpNotFound();
 
