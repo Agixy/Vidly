@@ -1,13 +1,14 @@
 ﻿    <div class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
-          
-         <p>Vidly<p/>
-       
-       
-        @Html.ActionLink("Customers", "Index", "Customers" )
-        @Html.ActionLink("Movies", "Index", "Movies")
-           
+
+
+
+            @Html.ActionLink("Vidly", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            @Html.ActionLink("Customers", "Index", "Customers", new { area = "" }, new { @class = "navbar-brand" })
+            @Html.ActionLink("Movies", "Random", "Movies", new { area = "" }, new { @class = "navbar-brand" })
+
+
         </div>
         </div>
        
