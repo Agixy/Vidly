@@ -259,6 +259,14 @@
     <Compile Include="Migrations\201807131030260_ApplyAnnotationToCustomerName.Designer.cs">
       <DependentUpon>201807131030260_ApplyAnnotationToCustomerName.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201807131240559_AddNameToMembershipType.cs" />
+    <Compile Include="Migrations\201807131240559_AddNameToMembershipType.Designer.cs">
+      <DependentUpon>201807131240559_AddNameToMembershipType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201807131256184_UpdateMTRecords.cs" />
+    <Compile Include="Migrations\201807131256184_UpdateMTRecords.Designer.cs">
+      <DependentUpon>201807131256184_UpdateMTRecords.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -409,6 +417,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201807131030260_ApplyAnnotationToCustomerName.resx">
       <DependentUpon>201807131030260_ApplyAnnotationToCustomerName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201807131240559_AddNameToMembershipType.resx">
+      <DependentUpon>201807131240559_AddNameToMembershipType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201807131256184_UpdateMTRecords.resx">
+      <DependentUpon>201807131256184_UpdateMTRecords.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
